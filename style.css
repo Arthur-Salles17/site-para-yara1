@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #cc00ff, #fad0c4);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+p {
+    font-size: 23px;
+}
+
+/* Centraliza o botão */
+#button {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+/* Estiliza o botão */
+button {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(255, 120, 160, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Animação suave do botão */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Efeito ao passar o dedo (ou mouse) */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 100, 150, 0.6);
+}
+
+/* Estilo do texto dentro do botão */
+button a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}

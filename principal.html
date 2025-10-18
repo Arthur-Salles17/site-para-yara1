@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Momentos 💞 </title>
+</head>
+
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="imagens/nos.jpg" alt="nos dnv">
+            <img src="imagens/cunhadoXyara.jpg" alt="cunhado">
+            <img src="imagens/nos 5.jpg" alt="">
+            <img src="imagens/nos 2.jpg" alt="nós 2">
+            <img src="imagens/ela.jpg" alt="nós 3">
+            <img src="imagens/olhos.jpg" alt="olhos lindos">
+            <img src="imagens/ela1.jpg" alt="foto com ela na roça">
+            <img src="imagens/unhas.jpg" alt="unha azul">
+            <img src="imagens/nos 3.jpg" alt="nós 3">
+            <img src="imagens/nos 4.jpg" alt="nós 4">
+            <img src="imagens/gemeas.jpg" alt="gemeas">
+            <img src="imagens/nos 1.jpg" alt="nós 1">
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <p class="legenda">💞 Cada momento com você é único 💞
+        <br>
+        Eu te amo meu xuxu 💖
+    </p>
+
+    <div class="buttons-interaction">
+        <button class="video-button">
+            <a href="videos/cavalinho.mp4" target="_blank" rel="noopener noreferrer">
+                Vídeo 🎬
+            </a>
+        </button>
+        <button class="back-button">
+            <a href="index.html">Voltar 🏠</a>
+        </button>
+    </div>
+
+</body>
+<script>
+    let index = 0;
+    const images = document.querySelectorAll('.carousel img');
+    const total = images.length;
+
+    document.querySelector('.next').addEventListener('click', () => {
+        index = (index + 1) % total;
+        updateCarousel();
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        index = (index - 1 + total) % total;
+        updateCarousel();
+    });
+
+    function updateCarousel() {
+        document.querySelector('.carousel').style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+
+</html>
