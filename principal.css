@@ -1,9 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 /* Estilo da segunda pagina */
 body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #cc00ff, #fad0c4);
-    font-family: 'Dancing Script', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +105,6 @@ body {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -126,6 +130,5 @@ body {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
 }
